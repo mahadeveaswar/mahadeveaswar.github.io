@@ -46,8 +46,8 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
-    <div class="wrap">
-      <div class="hero-grid">
+    <div class="wrap hero-grid">
+      <div class="hero-main">
         <p class="eyebrow reveal">Lead Data Engineer · Aspire</p>
         <h1 class="hero-headline reveal">
           I turn scattered data<br>
@@ -63,33 +63,25 @@
           <a class="btn btn-primary" href="#work">See the work</a>
           <a class="btn btn-ghost" href="mailto:mahadeveaswar@gmail.com">mahadeveaswar@gmail.com</a>
         </div>
-        <a class="hero-credential reveal" href="https://cp.certmetrics.com/amazon/en/public/verify/credential/28c6c3f996854b8b9b503e8db165a366" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/aws-cert-badge.png" alt="" class="hero-credential-logo" />
-          <span>AWS Certified Data Engineer</span>
-        </a>
       </div>
-    </div>
-    <div class="hero-glyph" aria-hidden="true">
-      <svg viewBox="0 0 240 240" width="100%" height="100%">
-        <circle cx="120" cy="120" r="119" class="glyph-ring" />
-        <g class="glyph-nodes">
-          <circle cx="120" cy="30" r="4"/>
-          <circle cx="205" cy="75" r="4"/>
-          <circle cx="205" cy="165" r="4"/>
-          <circle cx="120" cy="210" r="4"/>
-          <circle cx="35" cy="165" r="4"/>
-          <circle cx="35" cy="75" r="4"/>
-          <circle cx="120" cy="120" r="6" class="glyph-core"/>
-        </g>
-        <g class="glyph-lines" stroke="currentColor" stroke-width="1">
-          <line x1="120" y1="120" x2="120" y2="30"/>
-          <line x1="120" y1="120" x2="205" y2="75"/>
-          <line x1="120" y1="120" x2="205" y2="165"/>
-          <line x1="120" y1="120" x2="120" y2="210"/>
-          <line x1="120" y1="120" x2="35" y2="165"/>
-          <line x1="120" y1="120" x2="35" y2="75"/>
-        </g>
-      </svg>
+      <aside class="hero-side reveal">
+        <img class="hero-photo" src="assets/images/about-photo.jpg" alt="Mahadev Easwar" loading="lazy" />
+        <div class="side-block">
+          <h4>Education</h4>
+          <p>B.Tech, Computer Science<br>SASTRA University · 2015–2019<br><span class="muted">NIRF Top 25 for Computer Science</span></p>
+        </div>
+        <div class="side-block">
+          <h4>Certification</h4>
+          <a class="hero-credential" href="https://cp.certmetrics.com/amazon/en/public/verify/credential/28c6c3f996854b8b9b503e8db165a366" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/aws-cert-badge.png" alt="" class="hero-credential-logo" />
+            <span>AWS Certified Data Engineer<br><span class="muted">Associate · October 2024</span></span>
+          </a>
+        </div>
+        <div class="side-block">
+          <h4>Recognition</h4>
+          <p class="muted">MVP of the Year 2024, Aspire finance cluster<br>4× Bravo / Teamwork awards, Tata Communications</p>
+        </div>
+      </aside>
     </div>
     <button class="scroll-cue" type="button" aria-label="Scroll to content" data-scroll-to="#manifesto">
       <span></span>
@@ -574,7 +566,7 @@
 
   <!-- ============ ABOUT ============ -->
   <section class="about" id="about">
-    <div class="wrap about-grid">
+    <div class="wrap">
       <div class="about-copy reveal">
         <p class="section-kicker">About</p>
         <h2 class="section-title">A bit more about me.</h2>
@@ -588,7 +580,9 @@
         </p>
         <p>
           That instinct followed me into industry. At Tata Communications I built
-          the data layer under a network-feasibility engine; at Accern I optimized
+          the data layer under Optimus, the feasibility-and-pricing engine that
+          worked out whether a new last-mile connectivity request could be served
+          and from where; at Accern I optimized
           a predictive-modeling backend; and for almost four years now at Aspire
           I've gone from being the first data hire to leading the architecture,
           governance, and AI-integrated access layer for a platform running across
@@ -602,25 +596,10 @@
           MCP-based, natural-language access to production data.
         </p>
       </div>
-      <aside class="about-side reveal">
-        <img class="about-photo" src="assets/images/about-photo.jpg" alt="Mahadev Easwar" loading="lazy" />
-        <div class="side-block">
-          <h4>Education</h4>
-          <p>B.Tech, Computer Science<br>SASTRA University · 2015–2019<br><span class="muted">NIRF Top 25 for Computer Science</span></p>
-        </div>
-        <div class="side-block">
-          <h4>Certification</h4>
-          <p>AWS Certified Data Engineer – Associate<br><span class="muted">October 2024</span></p>
-        </div>
-        <div class="side-block">
-          <h4>Recognition</h4>
-          <p class="muted">MVP of the Year 2024, Aspire finance cluster<br>4× Bravo / Teamwork awards, Tata Communications</p>
-        </div>
-        <div class="side-block">
-          <h4>Outside of work</h4>
-          <p class="muted">I compose, arrange and program hybrid/orchestral music.<br><a href="https://www.youtube.com/@mahadev_easwar" target="_blank" rel="noopener noreferrer">Listen on YouTube →</a></p>
-        </div>
-      </aside>
+      <div class="side-block side-block--wide reveal">
+        <h4>Outside of work</h4>
+        <p class="muted">I compose, arrange and program hybrid/orchestral music.<br><a href="https://www.youtube.com/@mahadev_easwar" target="_blank" rel="noopener noreferrer">Listen on YouTube →</a></p>
+      </div>
     </div>
   </section>
 
