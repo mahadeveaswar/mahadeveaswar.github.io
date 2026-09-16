@@ -38,7 +38,7 @@
 
   /* ---------- active nav link on scroll ---------- */
   function initActiveNav() {
-    var sections = ["work", "journey", "writing", "about"]
+    var sections = ["journey", "work", "writing", "about"]
       .map(function (id) { return document.getElementById(id); })
       .filter(Boolean);
     var links = document.querySelectorAll(".primary-nav a");
@@ -51,12 +51,12 @@
     function update() {
       ticking = false;
       var line = window.innerHeight * 0.35;
-      var current = sections[0];
+      var current = null;
       for (var i = 0; i < sections.length; i++) {
         if (sections[i].getBoundingClientRect().top <= line) current = sections[i];
       }
       links.forEach(function (l) { l.classList.remove("active"); });
-      var link = map[current.id];
+      var link = current && map[current.id];
       if (link) link.classList.add("active");
     }
     function onScroll() {

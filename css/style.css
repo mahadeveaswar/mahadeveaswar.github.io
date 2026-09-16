@@ -86,6 +86,8 @@ em{ font-style: italic; color: var(--accent); }
 }
 
 /* ---------- header ---------- */
+section[id]{ scroll-margin-top: 5rem; }
+
 .site-header{
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   background: color-mix(in srgb, var(--paper) 86%, transparent);
@@ -164,7 +166,7 @@ em{ font-style: italic; color: var(--accent); }
   position: relative;
   min-height: 100svh;
   display: flex; align-items: center;
-  padding: 7rem 0 4rem;
+  padding: 7.5rem 0 6rem;
   overflow: hidden;
 }
 .hero > .wrap{ width: 100%; }
@@ -195,7 +197,7 @@ em{ font-style: italic; color: var(--accent); }
 
 .hero-credential{
   display: inline-flex; align-items: center; gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-decoration: none;
   font-family: var(--mono); font-size: 1.2rem; font-weight: 500; color: var(--ink-soft);
   transition: color .2s var(--ease), transform .2s var(--ease);
@@ -263,7 +265,7 @@ em{ font-style: italic; color: var(--accent); }
 @media (prefers-reduced-motion: reduce){ .scroll-cue span{ animation: none; } }
 
 /* ---------- manifesto ---------- */
-.manifesto{ padding: 6rem 0; border-top: 1px solid var(--line); }
+.manifesto{ padding: 3.5rem 0; border-top: 1px solid var(--line); }
 .manifesto-text{
   font-family: var(--serif);
   font-size: clamp(1.35rem, 2.6vw, 2rem);
@@ -271,6 +273,12 @@ em{ font-style: italic; color: var(--accent); }
   max-width: 46ch;
   font-weight: 400;
   color: var(--ink-soft);
+}
+.manifesto-text .hl{
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1;
+  box-shadow: inset 0 -0.15em 0 color-mix(in srgb, #3c6e71 35%, transparent);
 }
 /* ---------- impact ---------- */
 .impact{ padding: 3rem 0 5rem; border-top: 1px solid var(--line); }
